@@ -31,6 +31,9 @@ html {
 .content-center {
     justify-content: center;
 }
+.content-evenly {
+    justify-content: space-evenly;
+}
 .items-center {
     align-items: center;
 }
@@ -66,7 +69,6 @@ html {
     top: 5rem;
     right: 5rem;
     z-index: 200;
-    justify-content: space-evenly;
     transition: right 0.7s;
 }
 
@@ -339,4 +341,85 @@ html {
 .about-us-img-wrapper img {
     object-fit: cover;
     opacity: 0.8;
+}
+
+/* Team */
+.team {
+    padding: 0 5rem 20rem;
+}
+.cards-wrapper {
+    margin-top: 8rem;
+}
+.card {
+    width: 37rem;
+    height: 45rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, .4);
+    border-radius: 0.5rem;
+}
+.card-img-wrapper {
+    background-color: #262626;
+    border-radius: 0.5rem;
+}
+.card-img-wrapper,
+.card-img-wrapper img {
+    height: 100%;
+}
+.card-img-wrapper img {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.card:hover .card-img-wrapper img {
+    opacity: 0.5;
+}
+
+.card-info {
+    bottom: 0rem;
+    padding: 2rem;
+    text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+.card-info h2 {
+    font-family: var(--baloo-font);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #eee;
+}
+.card-info h3 {
+    font-family: var(--mulish-font);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #a52a2a;
+    margin-bottom: 1rem;
+}
+.card-info p {
+    font-family: var(--baloo-font);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: #eee;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.card-info button {
+    height: 3rem;
+    background-color: #c29525;
+    border: none;
+    font-family: var(--baloo-font);
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: #eee;
+    border-radius: .3rem;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, .4);
 }
