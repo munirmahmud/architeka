@@ -35,11 +35,38 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
+    z-index: 9999;
+}
+.display .spinner {
+    opacity: 0;
+    visibility: hidden;
 }
 .circles {
     width: 8rem;
     height: 8rem;
     position: relative;
+    opacity: 0;
+    visibility: hidden;
+    animation: displayCircles 4s;
+}
+@keyframes displayCircles {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    25% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 .circles div {
     animation: circles 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
@@ -130,6 +157,10 @@ html {
 
 .container {
     display: none;
+}
+
+.display .container {
+    display: block;
 }
 
 .flex {
