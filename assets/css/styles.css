@@ -1,3 +1,80 @@
 /* font-family: 'Baloo Da 2', cursive;
 font-family: 'Josefin Slab', serif;
 font-family: 'Mulish', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --baloo-font: 'Baloo Da 2', cursive;
+    --josefin-font: 'Josefin Slab', serif;
+    --mulish-font: 'Mulish', sans-serif;
+
+    /* Color */
+    --white: #ffffff;
+    --yellow: #c29525;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.banner h1 {
+    font-family: var(--baloo-font);
+    font-size: 8rem;
+    font-weight: 300;
+    color: var(--white);
+    width: 50%;
+    line-height: 9rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .4);
+}
+.banner p {
+    font-family: var(--josefin-font);
+    font-size: 4rem;
+    color: var(--white);
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .4);
+}
+.banner button {
+    height: 7rem;
+    background-color: var(--yellow);
+    border: none;
+    font-family: var(--mulish-font);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, .2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .4);
+    padding: 0 4rem;
+    cursor: pointer;
+}
