@@ -9,27 +9,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="hamburger-menu">
+        <div class="hamburger-menu fixed flex items-center flex-column pointer">
             <div class="line line-1"></div>
             <div class="line line-2"></div>
             <div class="line line-3"></div>
         </div>
-        <header class="header">
-            <div class="img-wrapper">
+
+        <header class="header relative hidden">
+            <div class="img-wrapper hidden">
                 <img src="assets/images/hero-bg.jpg" alt="Hero Background Image">
             </div>
 
-            <div class="banner">
+            <div class="banner absolute">
                 <h1>Architecture &amp; Interior Design</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit inventore.</p>
-                <button>Discover now</button>
+                <button type="button" class="pointer">Discover now</button>
             </div>
         </header>
+
+        <section class="sidebar fixed">
+            <ul class="menu absolute">
+                <li class="menu-item center">
+                    <a href="#" data-content="Home" class="menu-link relative">Home</a>
+                </li>
+                <li class="menu-item center">
+                    <a href="#" data-content="About Us" class="menu-link relative">About Us</a>
+                </li>
+                <li class="menu-item center">
+                    <a href="#" data-content="Team" class="menu-link relative">Team</a>
+                </li>
+                <li class="menu-item center">
+                    <a href="#" data-content="Pricing" class="menu-link relative">Pricing</a>
+                </li>
+                <li class="menu-item center">
+                    <a href="#" data-content="Contact" class="menu-link relative">Contact</a>
+                </li>
+            </ul>
+
+            <div class="social-media absolute flex content-center">
+                <a href="#"><i class="fab fa-facebook-f flex content-center items-center"></i></a>
+                <a href="#"><i class="fab fa-instagram flex content-center items-center"></i></a>
+                <a href="#"><i class="fab fa-twitter flex content-center items-center"></i></a>
+            </div>
+        </section>
     </div>
 
 
