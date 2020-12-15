@@ -34,6 +34,9 @@ html {
 .content-evenly {
     justify-content: space-evenly;
 }
+.content-between {
+    justify-content: space-between;
+}
 .items-center {
     align-items: center;
 }
@@ -512,4 +515,26 @@ html {
     letter-spacing: .1rem;
     text-shadow: 0 .1rem .3rem rgba(0, 0, 0, .5);
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+}
+
+
+/* FOOTER */
+.footer {
+    height: 15rem;
+    background-color: #17181b;
+}
+.footer-wrapper {
+    width: 60%;
+}
+.copyright { 
+    font-family: var(--baloo-font);
+    font-size: 1.6rem;
+    color: #a7a7a7;
+}
+.social-list a {
+    margin: 0.2rem;
+}
+.social-list i {
+    font-size: 2rem;
+    color: #a7a7a7;
 }
